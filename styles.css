@@ -188,19 +188,6 @@ textarea {
   background: #0b5759;
 }
 
-.nav-interest {
-  color: var(--white);
-  background: var(--coral);
-  border: 1px solid var(--coral);
-}
-
-.nav-menu a.nav-interest:hover,
-.nav-menu a.nav-interest:focus-visible {
-  color: var(--white);
-  background: #e45b46;
-  border-color: #e45b46;
-}
-
 .nav-conference {
   color: var(--white);
   background: var(--blue);
@@ -216,8 +203,6 @@ textarea {
 
 .site-header.is-scrolled .nav-action,
 .site-header.menu-open .nav-action,
-.site-header.is-scrolled .nav-interest,
-.site-header.menu-open .nav-interest,
 .site-header.is-scrolled .nav-conference,
 .site-header.menu-open .nav-conference {
   color: var(--white);
