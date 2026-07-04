@@ -48,11 +48,36 @@ async function copyText(value) {
 }
 
 if (contactReveal && contactTrigger) {
+  const closeContactReveal = () => {
+    contactReveal.classList.remove("is-open");
+    contactTrigger.setAttribute("aria-expanded", "false");
+  };
+
   contactTrigger.addEventListener("click", () => {
     const isOpen = contactReveal.classList.toggle("is-open");
     contactTrigger.setAttribute("aria-expanded", String(isOpen));
     if (copyStatus) {
       copyStatus.textContent = isOpen ? "Choose an email to copy." : "";
+    }
+  });
+
+  contactReveal.addEventListener("mouseleave", () => {
+    closeContactReveal();
+    if (contactReveal.contains(document.activeElement) && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  });
+
+  contactReveal.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeContactReveal();
+      contactTrigger.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!contactReveal.contains(event.target)) {
+      closeContactReveal();
     }
   });
 
