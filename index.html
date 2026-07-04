@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interfaces Bridging Embodied AI and Assistive Technology</title>
+    <meta
+      name="description"
+      content="A UIST 2026 workshop on accessible, usable, and empowering interfaces for assistive robots and embodied AI."
+    />
+    <meta name="theme-color" content="#0d4f50" />
+    <meta property="og:title" content="Interfaces Bridging Embodied AI and Assistive Technology" />
+    <meta
+      property="og:description"
+      content="A full-day UIST 2026 workshop centering interface innovation for assistive human-robot interaction."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/workshop-hero.png" />
+    <link rel="preload" href="assets/workshop-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Workshop home">
+          <span class="brand-mark" aria-hidden="true">EA</span>
+          <span>
+            <strong>Embodied AI + AT</strong>
+            <small>UIST 2026 Workshop</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+          <span class="sr-only">Open navigation</span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" data-nav-menu>
+          <a href="#focus">Focus</a>
+          <a href="#program">Program</a>
+          <a href="#participate">Participate</a>
+          <a href="#organizers">Organizers</a>
+          <a class="nav-conference" href="https://uist.acm.org/2026/" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="external-link" aria-hidden="true"></i>
+            UIST 2026
+          </a>
+          <a class="nav-action" href="assets/uist2026-workshop-proposal.pdf" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="file-text" aria-hidden="true"></i>
+            Full Proposal
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section
+        class="hero"
+        id="top"
+        role="img"
+        aria-label="Assistive robot, wheelchair user, and researchers prototyping accessible robot interfaces in a bright studio."
+      >
+        <div class="hero-inner">
+          <p class="eyebrow">Full-Day UIST 2026 Workshop · October 2026</p>
+          <h1>Interfaces Bridging Embodied Artificial Intelligence and Assistive Technology</h1>
+          <p class="hero-copy">
+            Bringing together UIST, accessibility, HRI, robotics, rehabilitation, and assistive technology
+            communities to design robot interfaces that are controllable, personal, trustworthy, and grounded in
+            disabled people's agency.
+          </p>
+          <div class="event-meta" aria-label="Workshop event details">
+            <span>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              Detroit, Michigan, USA
+            </span>
+            <a href="https://programs.sigchi.org/uist/2026/maps" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="map" aria-hidden="true"></i>
+              Venue Map
+            </a>
+            <a href="https://uist.acm.org/2026/" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              Main UIST 2026 Site
+            </a>
+          </div>
+          <div class="hero-actions" aria-label="Workshop actions">
+            <a class="button button-primary" href="https://docs.google.com/forms/tbd_here:)" target="_blank" rel="noopener noreferrer" data-interest-link>
+              <i data-lucide="send" aria-hidden="true"></i>
+              Fill Interest Form
+            </a>
+            <a class="button button-secondary" href="assets/uist2026-workshop-proposal.pdf" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="download" aria-hidden="true"></i>
+              Full Proposal PDF
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-band" aria-label="Workshop snapshot">
+        <div class="section-inner signal-grid">
+          <div>
+            <span>25-50</span>
+            <p>participants</p>
+          </div>
+          <div>
+            <span>1 day</span>
+            <p>interactive format</p>
+          </div>
+          <div>
+            <span>5 modes</span>
+            <p>talks, demos, panels, breakouts, prototyping</p>
+          </div>
+          <div>
+            <span>1 agenda</span>
+            <p>accessible robot interfaces research roadmap</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="focus">
+        <div class="section-inner split">
+          <div class="section-heading">
+            <p class="eyebrow">Workshop Focus</p>
+            <h2>Assistive robots are an interface problem.</h2>
+          </div>
+          <div class="lead-stack">
+            <p>
+              Assistive robots can support mobility, manipulation, feeding, navigation, communication,
+              rehabilitation, and daily living. Their impact depends on how people understand, instruct,
+              correct, personalize, and trust them.
+            </p>
+            <p>
+              This workshop asks how UIST-style interaction techniques can make assistive robots more usable,
+              accessible, controllable, and empowering for people with disabilities.
+            </p>
+          </div>
+        </div>
+
+        <div class="section-inner topic-grid" aria-label="Workshop themes">
+          <article class="topic-card accent-teal">
+            <i data-lucide="message-square-text" aria-hidden="true"></i>
+            <h3>Natural Control</h3>
+            <p>Speech, language, gesture, gaze, switch access, and multimodal input for robotic assistance.</p>
+          </article>
+          <article class="topic-card accent-blue">
+            <i data-lucide="sliders-horizontal" aria-hidden="true"></i>
+            <h3>Shared Autonomy</h3>
+            <p>Interfaces for intervention, correction, handoff, uncertainty, and meaningful user control.</p>
+          </article>
+          <article class="topic-card accent-coral">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            <h3>Safety and Trust</h3>
+            <p>Feedback, explanation, consent, and failure recovery in everyday assistive contexts.</p>
+          </article>
+          <article class="topic-card accent-green">
+            <i data-lucide="accessibility" aria-hidden="true"></i>
+            <h3>Agency by Design</h3>
+            <p>Participatory methods, personalization, disabled people's leadership, and long-term deployment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="program">
+        <div class="section-inner split compact">
+          <div class="section-heading">
+            <p class="eyebrow">Program</p>
+            <h2>A full-day format built around exchange and making.</h2>
+          </div>
+          <p class="section-note">
+            The day is intentionally active: short talks establish shared context, demos make systems concrete,
+            and structured sessions turn discussion into research questions and collaboration opportunities.
+          </p>
+        </div>
+
+        <div class="section-inner schedule" aria-label="Proposed schedule">
+          <article class="schedule-item">
+            <time>9:00-9:20</time>
+            <div>
+              <h3>Welcome and Introductions</h3>
+              <p>Goals, participant backgrounds, and shared vocabulary across UI, accessibility, and robotics.</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>9:20-10:10</time>
+            <div>
+              <h3>Lightning Talks</h3>
+              <p>Compact provocations on accessible HRI, assistive robotics, embodied AI, and UI techniques.</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>10:30-11:30</time>
+            <div>
+              <h3>Demo and Video Session</h3>
+              <p>Assistive robot interfaces, prototypes, teleoperation tools, and interaction techniques.</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>11:30-12:15</time>
+            <div>
+              <h3>Breakout 1</h3>
+              <p>What makes current robot interfaces inaccessible, brittle, or hard to trust?</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>1:30-2:15</time>
+            <div>
+              <h3>Panel</h3>
+              <p>Autonomy, agency, safety, and user control in real assistive environments.</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>2:15-3:15</time>
+            <div>
+              <h3>Hands-On Prototyping</h3>
+              <p>Small groups design interface concepts for concrete assistive robotics scenarios.</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>3:30-4:15</time>
+            <div>
+              <h3>Breakout 2</h3>
+              <p>Research agenda, evaluation challenges, datasets, deployments, and community building.</p>
+            </div>
+          </article>
+          <article class="schedule-item">
+            <time>4:15-5:00</time>
+            <div>
+              <h3>Group Synthesis</h3>
+              <p>Shared outputs, next steps, public resources, and collaboration paths.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="participate">
+        <div class="section-inner participate-grid">
+          <div class="section-heading">
+            <p class="eyebrow">Participate</p>
+            <h2>Fill out the workshop interest form.</h2>
+            <p>
+              We welcome UIST and accessibility researchers, roboticists, HRI scholars, disabled researchers and
+              designers, assistive technology practitioners, students, and industry professionals. Please use the Google
+              Form to tell us about your background, topics of interest, and potential demo ideas.
+            </p>
+          </div>
+
+          <div class="interest-panel">
+            <i data-lucide="clipboard-list" aria-hidden="true"></i>
+            <h3>Interest form</h3>
+            <p>
+              Please complete the Google Form if you would like to participate or receive workshop updates.
+            </p>
+            <a class="button button-primary" href="https://docs.google.com/forms/tbd_here:)" target="_blank" rel="noopener noreferrer" data-interest-link>
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              Open Google Form
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="outcomes">
+        <div class="section-inner split compact">
+          <div class="section-heading">
+            <p class="eyebrow">Outputs</p>
+            <h2>The workshop is designed to leave behind useful artifacts.</h2>
+          </div>
+          <div class="outcome-list">
+            <article>
+              <span>01</span>
+              <h3>Research Agenda</h3>
+              <p>Open questions for interface design, shared autonomy, safety, trust, and evaluation.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Design Scenarios</h3>
+              <p>Concrete assistive robotics situations for prototyping, benchmarking, and discussion.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Community Network</h3>
+              <p>Cross-venue collaborations among UIST, ASSETS, CHI, HRI, rehabilitation, and robotics.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Public Resource Hub</h3>
+              <p>Demos, references, participant interests, and synthesis materials after the workshop.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="organizers">
+        <div class="section-inner split compact">
+          <div class="section-heading">
+            <p class="eyebrow">Organizers</p>
+            <h2>A cross-community team spanning AI, HCI, robotics, and assistive technology.</h2>
+          </div>
+        </div>
+
+        <div class="section-inner organizer-intro">
+          <p>
+            The organizing team brings together academic research and industry deployment experience across
+            human-computer interaction, accessibility, artificial intelligence, robotics, computational design, and
+            long-term interactive systems. That mix is central to the workshop's goal: connecting foundational
+            research with practical assistive technologies that can work in the real world.
+          </p>
+        </div>
+
+        <div class="section-inner organizer-grid" aria-label="Workshop organizers">
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://www.cs.cmu.edu/~helalaou/" target="_blank" rel="noopener noreferrer" aria-label="Hamza El Alaoui website">
+              <div class="organizer-photo" aria-hidden="true">HE</div>
+              <div>
+                <h3>Hamza El Alaoui</h3>
+                <p class="affiliation">Carnegie Mellon University</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Ph.D. student building cyber-physical human augmentation systems across embedded sensing, ML,
+              robotics, speech and audio interfaces, and human-AI collaboration.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://harishram-nambiappan.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Harish Ram Nambiappan website">
+              <div class="organizer-photo" aria-hidden="true">HN</div>
+              <div>
+                <h3>Harish Ram Nambiappan</h3>
+                <p class="affiliation">University of Texas at Arlington</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Researcher developing assistive navigation and human-robot interaction systems that help blind and
+              low-vision people navigate dynamic indoor environments and interact with robots.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://atiehtaheri.com/" target="_blank" rel="noopener noreferrer" aria-label="Atieh Taheri website">
+              <div class="organizer-photo" aria-hidden="true">AT</div>
+              <div>
+                <h3>Atieh Taheri</h3>
+                <p class="affiliation">Carnegie Mellon University</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Presidential Postdoctoral Fellow working across accessibility, human-centered AI, mixed reality, and
+              participatory design for agency and creative expression.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://maxpascher.de/" target="_blank" rel="noopener noreferrer" aria-label="Max Pascher website">
+              <div class="organizer-photo" aria-hidden="true">MP</div>
+              <div>
+                <h3>Max Pascher</h3>
+                <p class="affiliation">TU Dortmund University</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Postdoctoral researcher studying AI-enhanced HRI, shared-control techniques for assistive robotic
+              arms, autonomous-task intervention, and XR-based prototyping.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://www.vinitharanganeni.com/home/" target="_blank" rel="noopener noreferrer" aria-label="Vinitha Ranganeni website">
+              <div class="organizer-photo" aria-hidden="true">VR</div>
+              <div>
+                <h3>Vinitha Ranganeni</h3>
+                <p class="affiliation">Hello Robot</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Human-Robot Interaction Lead at Hello Robot creating accessible teleoperation, shared autonomy,
+              navigation, and manipulation experiences for the Stretch mobile manipulator.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://stephanie-valencia.com/" target="_blank" rel="noopener noreferrer" aria-label="Stephanie Valencia website">
+              <div class="organizer-photo" aria-hidden="true">SV</div>
+              <div>
+                <h3>Stephanie Valencia</h3>
+                <p class="affiliation">University of Maryland</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Assistant Professor designing equitable assistive technology, open-source hardware, and expressive
+              communication systems with participatory methods.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://sites.google.com/site/tapomayukh/" target="_blank" rel="noopener noreferrer" aria-label="Tapomayukh Bhattacharjee website">
+              <div class="organizer-photo" aria-hidden="true">TB</div>
+              <div>
+                <h3>Tapomayukh Bhattacharjee</h3>
+                <p class="affiliation">Cornell University</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Assistant Professor directing the EmPRISE Lab, focused on physical robot caregiving, manipulation,
+              haptic perception, tactile sensing, and real-world assistive systems.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://eshed1.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Eshed Ohn-Bar website">
+              <div class="organizer-photo" aria-hidden="true">EO</div>
+              <div>
+                <h3>Eshed Ohn-Bar</h3>
+                <p class="affiliation">Boston University</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Assistant Professor developing machine-intelligence systems for real-world embodied, assistive, and
+              autonomous applications, including accessible navigation.
+            </p>
+          </article>
+          <article class="organizer-card">
+            <a class="organizer-link" href="https://www.cs.cmu.edu/~jbigham/" target="_blank" rel="noopener noreferrer" aria-label="Jeffrey P. Bigham website">
+              <div class="organizer-photo" aria-hidden="true">JB</div>
+              <div>
+                <h3>Jeffrey P. Bigham</h3>
+                <p class="affiliation">Apple and Carnegie Mellon University</p>
+              </div>
+            </a>
+            <p class="organizer-bio">
+              Associate Professor and Director of Human-Centered Machine Intelligence and Responsible AI, working
+              on accessibility technologies, AI/ML design, and deployable interactive systems.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="questions" id="questions" aria-labelledby="questions-title">
+        <div class="section-inner questions-inner">
+          <div>
+            <p class="eyebrow">Questions?</p>
+            <h2 id="questions-title">Need help with the workshop, registration, or accessibility needs?</h2>
+          </div>
+          <div class="questions-copy">
+            <div class="contact-reveal" data-contact-reveal>
+              <button class="contact-trigger" type="button" data-contact-trigger aria-expanded="false">
+                <i data-lucide="mail" aria-hidden="true"></i>
+                Contact Us
+              </button>
+              <div class="contact-email-list" aria-label="Contact email addresses">
+                <button
+                  class="email-chip"
+                  type="button"
+                  data-email-user="helalaou"
+                  data-email-domain="cs.cmu.edu"
+                  aria-label="Copy Hamza El Alaoui email"
+                >
+                  <span class="email-name">Hamza</span>
+                  <span class="email-mask" aria-hidden="true">h•••••••@c•••••••</span>
+                </button>
+                <button
+                  class="email-chip"
+                  type="button"
+                  data-email-user="harishram.nambiappan"
+                  data-email-domain="mavs.uta.edu"
+                  aria-label="Copy Harish Ram Nambiappan email"
+                >
+                  <span class="email-name">Harish</span>
+                  <span class="email-mask" aria-hidden="true">h••••••••••••••••••••@m•••••••</span>
+                </button>
+              </div>
+              <p class="copy-status" data-copy-status aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p>Interfaces Bridging Embodied Artificial Intelligence and Assistive Technology · UIST 2026 Workshop</p>
+        <a href="#top" aria-label="Back to top">
+          <i data-lucide="arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
