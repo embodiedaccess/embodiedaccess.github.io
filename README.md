@@ -1,6 +1,6 @@
 # Interfaces Bridging Embodied AI and Assistive Technology
 
-Landing page for a proposed **full-day UIST 2026 workshop** on accessible, usable, and empowering interfaces for assistive robots and embodied AI.
+Landing page for a proposed **full-day UIST 2026 workshop** (October 2026, Detroit) on interfaces for assistive robots and embodied AI — where robotics, HCI, rehabilitation, and access tech actually meet.
 
 **Live site:** [embodiedaccess.github.io](https://embodiedaccess.github.io)
 
@@ -10,11 +10,11 @@ Landing page for a proposed **full-day UIST 2026 workshop** on accessible, usabl
 
 This repo is a **static workshop website** — no backend, no build step, no framework. It exists to:
 
-- Introduce the workshop theme, program, and organizers
+- Introduce the workshop focus, program, and organizers
 - Share the [full proposal PDF](assets/proposal.pdf)
-- Let interested attendees open a prefilled email to express interest (works on plain GitHub Pages)
+- Link to the interest form for potential participants
 
-The workshop brings together HCI, robotics, rehabilitation, and assistive technology communities to design robot interfaces that are controllable, personal, trustworthy, and grounded in disabled people's agency.
+The workshop is a day of technical exchange: lightning talks, live demos, panels, breakouts, and hands-on prototyping. The goal is to compare approaches, surface open research problems, and sketch practical next steps across four themes — **natural control** (speech, gesture, gaze, switch access), **shared autonomy** (intervention, handoff, uncertainty), **safety and trust** (feedback, consent, failure recovery), and **agency by design** (participatory methods, personalization, long-term deployment).
 
 ---
 
