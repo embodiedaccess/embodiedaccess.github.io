@@ -620,6 +620,57 @@ h3 {
   margin-top: 1.2rem;
 }
 
+.interest-panel .button-primary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(135deg, #d36a54 0%, var(--coral) 48%, #b94f3b 100%);
+  box-shadow: 0 10px 24px rgba(199, 93, 71, 0.32);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    filter 220ms ease;
+}
+
+.interest-panel .button-primary::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: -70%;
+  width: 60%;
+  height: 180%;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: rotate(10deg);
+  transition: left 420ms ease;
+  pointer-events: none;
+}
+
+.interest-panel .button-primary:hover,
+.interest-panel .button-primary:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(199, 93, 71, 0.42);
+  filter: saturate(1.06);
+}
+
+.interest-panel .button-primary:hover::before,
+.interest-panel .button-primary:focus-visible::before {
+  left: 120%;
+}
+
+.interest-panel .button-primary i {
+  transition: transform 220ms ease;
+}
+
+.interest-panel .button-primary:hover i,
+.interest-panel .button-primary:focus-visible i {
+  transform: translateX(2px);
+}
+
 .outcome-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
