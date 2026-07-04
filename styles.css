@@ -189,6 +189,7 @@ textarea {
   color: var(--white);
   background: var(--coral);
   border: 1px solid var(--coral);
+  margin-top: 30px;
 }
 
 .nav-menu a.nav-interest:hover,
