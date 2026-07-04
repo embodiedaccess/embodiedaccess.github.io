@@ -811,7 +811,7 @@ a.organizer-link:focus-visible {
 .contact-reveal:hover .contact-email-list,
 .contact-reveal:focus-within .contact-email-list,
 .contact-reveal.is-open .contact-email-list {
-  max-height: 180px;
+  max-height: 220px;
   opacity: 1;
   transform: translateY(0);
 }
@@ -852,6 +852,7 @@ a.organizer-link:focus-visible {
   min-width: 0;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.82rem;
+  line-height: 1.28;
   overflow-wrap: anywhere;
   opacity: 0;
   filter: blur(5px);
@@ -860,6 +861,16 @@ a.organizer-link:focus-visible {
     opacity 180ms ease,
     transform 180ms ease,
     filter 180ms ease;
+}
+
+.email-chip-long::after {
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.email-chip-long .email-mask {
+  font-size: 0.75rem;
+  word-break: break-all;
 }
 
 .email-chip:hover,
