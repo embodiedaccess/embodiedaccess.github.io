@@ -13,6 +13,7 @@
   --shadow: 0 22px 70px rgba(19, 31, 36, 0.18);
   --radius: 8px;
   --header-height: 76px;
+  --focus-heading-size: clamp(2.3rem, 4.25vw, 3.85rem);
   --program-heading-width: 1200px;
   --organizers-heading-width: 790px;
   font-family:
@@ -295,6 +296,25 @@ h1 {
 
 h2 {
   font-size: 2.8rem;
+}
+
+#focus .section-heading h2 {
+  font-size: var(--focus-heading-size);
+}
+
+#focus .split {
+  align-items: center;
+  gap: 3.2rem;
+}
+
+#focus .section-heading,
+#focus .lead-stack {
+  max-width: 620px;
+}
+
+#focus .lead-stack {
+  margin-inline: auto;
+  margin-top: 1.7rem;
 }
 
 h3 {
