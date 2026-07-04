@@ -1,6 +1,6 @@
 # Interfaces Bridging Embodied AI and Assistive Technology
 
-Landing page for a proposed **full-day UIST 2026 workshop** (October 2026, Detroit) on interfaces for assistive robots and embodied AI — where robotics, HCI, rehabilitation, and access tech actually meet.
+Landing page for a proposed **full-day UIST 2026 workshop** (October 2026, Detroit) on interfaces for assistive robots and embodied AI, at the intersection of robotics, HCI, rehabilitation, and access tech.
 
 **Live site:** [embodiedaccess.github.io](https://embodiedaccess.github.io)
 
@@ -20,26 +20,15 @@ The workshop is a day of technical exchange: lightning talks, live demos, panels
 
 ## Run locally
 
-You need **Python 3** installed. From the project root:
+Open `index.html` in your browser. That's it.
 
-### macOS / Linux
+If you want a local server (optional — only needed if something breaks when opening the file directly), from the project root:
 
 ```bash
 ./run_local.sh
 ```
 
-If the script isn't executable yet: `chmod +x run_local.sh`
-
-Use a different port: `./run_local.sh 3000`
-
-### Windows
-
-| Shell | Command |
-| --- | --- |
-| Git Bash or WSL | `./run_local.sh` |
-| Command Prompt / PowerShell | `python -m http.server 8080` |
-
-Then open [http://localhost:8080](http://localhost:8080) (or whichever port you chose).
+Then open [http://localhost:8080](http://localhost:8080). The script uses Python's built-in HTTP server; any static file server works.
 
 ---
 
