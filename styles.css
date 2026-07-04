@@ -673,7 +673,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 1rem;
-  min-height: 78px;
+  min-height: 100px;
   color: inherit;
   text-decoration: none;
 }
@@ -690,11 +690,12 @@ a.organizer-link:focus-visible {
 }
 
 .organizer-photo {
-  width: 66px;
-  height: 66px;
-  flex: 0 0 66px;
+  width: 84px;
+  height: 84px;
+  flex: 0 0 84px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   border-radius: 50%;
   color: var(--white);
   background:
@@ -702,6 +703,13 @@ a.organizer-link:focus-visible {
     var(--teal);
   font-weight: 950;
   box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.42);
+}
+
+.organizer-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .organizer-card h3 {
@@ -1124,6 +1132,16 @@ svg {
 
   .signal-grid span {
     font-size: 1.55rem;
+  }
+
+  .organizer-link {
+    min-height: 86px;
+  }
+
+  .organizer-photo {
+    width: 76px;
+    height: 76px;
+    flex: 0 0 76px;
   }
 }
 
