@@ -985,6 +985,11 @@ a.organizer-link:focus-visible {
   object-fit: cover;
 }
 
+.organizer-initials {
+  font-size: 1.55rem;
+  letter-spacing: 0.03em;
+}
+
 .organizer-card h3 {
   font-size: 1.08rem;
   line-height: 1.2;
