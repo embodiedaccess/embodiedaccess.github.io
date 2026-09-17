@@ -1,12 +1,6 @@
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector("[data-nav-menu]");
-const googleInterestFormUrl = "https://docs.google.com/forms/tbd_here:)";
-
-document.querySelectorAll("[data-interest-link]").forEach((link) => {
-  link.setAttribute("href", googleInterestFormUrl);
-});
-
 document.querySelectorAll("a[href]").forEach((link) => {
   const href = link.getAttribute("href");
   if (!href || href.startsWith("#") || href.startsWith("mailto:")) return;
@@ -58,13 +52,6 @@ if (contactReveal && contactTrigger) {
     contactTrigger.setAttribute("aria-expanded", String(isOpen));
     if (copyStatus) {
       copyStatus.textContent = isOpen ? "Choose an email to copy." : "";
-    }
-  });
-
-  contactReveal.addEventListener("mouseleave", () => {
-    closeContactReveal();
-    if (contactReveal.contains(document.activeElement) && document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur();
     }
   });
 
@@ -121,6 +108,13 @@ if (navToggle && navMenu && header) {
     navMenu.classList.toggle("is-open", !isOpen);
     header.classList.toggle("menu-open", !isOpen);
     document.body.classList.toggle("nav-open", !isOpen);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+      closeMenu();
+      navToggle.focus();
+    }
   });
 
   navMenu.addEventListener("click", (event) => {
